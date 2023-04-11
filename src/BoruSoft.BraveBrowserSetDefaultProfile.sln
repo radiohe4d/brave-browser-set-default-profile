@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoruSoft.BraveBrowserSetDefaultProfile.Service", "BoruSoft.BraveBrowserSetDefaultProfile.Service\BoruSoft.BraveBrowserSetDefaultProfile.Service.csproj", "{F84720CF-8404-4C64-B3AC-EAC65A37487B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BoruSoft.BraveBrowserSetDefaultProfile.Service.Installer", "BoruSoft.BraveBrowserSetDefaultProfile.Service.Installer\BoruSoft.BraveBrowserSetDefaultProfile.Service.Installer.vdproj", "{A27ADF26-0D93-433E-A7D7-90AB1CA54BF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A27ADF26-0D93-433E-A7D7-90AB1CA54BF1}.Debug|Any CPU.ActiveCfg = Debug
+		{A27ADF26-0D93-433E-A7D7-90AB1CA54BF1}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A462A36-0DA7-4E13-AD61-36BA9157DAE9}
+	EndGlobalSection
+EndGlobal

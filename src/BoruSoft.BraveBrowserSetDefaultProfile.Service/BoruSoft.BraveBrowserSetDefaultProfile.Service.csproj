@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>dotnet-BoruSoft.BraveBrowserSetDefaultProfile.Service-31f6cf52-7782-4d93-8a90-7cea2bef7e8f</UserSecretsId>
+		<OutputType>exe</OutputType>
+		<ApplicationIcon>logo.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Include="logo.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CliWrap" Version="3.6.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="7.0.0" />
+	</ItemGroup>
+</Project>
