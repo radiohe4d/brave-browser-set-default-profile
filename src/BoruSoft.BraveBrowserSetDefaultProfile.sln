@@ -5,20 +5,52 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoruSoft.BraveBrowserSetDefaultProfile.Service", "BoruSoft.BraveBrowserSetDefaultProfile.Service\BoruSoft.BraveBrowserSetDefaultProfile.Service.csproj", "{F84720CF-8404-4C64-B3AC-EAC65A37487B}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BoruSoft.BraveBrowserSetDefaultProfile.Service.Installer", "BoruSoft.BraveBrowserSetDefaultProfile.Service.Installer\BoruSoft.BraveBrowserSetDefaultProfile.Service.Installer.vdproj", "{A27ADF26-0D93-433E-A7D7-90AB1CA54BF1}"
+Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "BoruSoft.BraveBrowserSetDefaultProfile.Installer", "BoruSoft.BraveBrowserSetDefaultProfile.Installer\BoruSoft.BraveBrowserSetDefaultProfile.Installer.wixproj", "{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Debug|x64.Build.0 = Debug|Any CPU
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Debug|x86.Build.0 = Debug|Any CPU
 		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A27ADF26-0D93-433E-A7D7-90AB1CA54BF1}.Debug|Any CPU.ActiveCfg = Debug
-		{A27ADF26-0D93-433E-A7D7-90AB1CA54BF1}.Release|Any CPU.ActiveCfg = Release
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Release|ARM64.Build.0 = Release|Any CPU
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Release|x64.ActiveCfg = Release|Any CPU
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Release|x64.Build.0 = Release|Any CPU
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Release|x86.ActiveCfg = Release|Any CPU
+		{F84720CF-8404-4C64-B3AC-EAC65A37487B}.Release|x86.Build.0 = Release|Any CPU
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Debug|Any CPU.Build.0 = Debug|x64
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Debug|ARM64.Build.0 = Debug|ARM64
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Debug|x64.ActiveCfg = Debug|x64
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Debug|x64.Build.0 = Debug|x64
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Debug|x86.ActiveCfg = Debug|x86
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Debug|x86.Build.0 = Debug|x86
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Release|Any CPU.ActiveCfg = Release|x64
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Release|Any CPU.Build.0 = Release|x64
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Release|ARM64.ActiveCfg = Release|ARM64
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Release|ARM64.Build.0 = Release|ARM64
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Release|x64.ActiveCfg = Release|x64
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Release|x64.Build.0 = Release|x64
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Release|x86.ActiveCfg = Release|x86
+		{F6ABDF73-2402-4AC7-9BD7-759CA14DF759}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

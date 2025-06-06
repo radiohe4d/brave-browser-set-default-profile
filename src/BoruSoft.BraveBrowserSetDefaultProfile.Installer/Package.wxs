@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<?define Name = "BoruSoft - Brave Browser Set Default Profile" ?>
+<?define Manufacturer = "BoruSoft" ?>
+<?define Version = "2.0.0" ?>
+<?define UpgradeCode = "6db28794-ffa8-466e-8689-ca6262075daf" ?>
+
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Package Name="$(Name)"
+             Manufacturer="$(Manufacturer)"
+             Version="$(Version)"
+             UpgradeCode="$(var.UpgradeCode)"
+             Compressed="true">
+		
+		<Icon Id="logo.ico" SourceFile="$(var.BoruSoft.BraveBrowserSetDefaultProfile.Service.TargetDir)..\..\..\..\logo.ico"/>
+		
+		<Property Id="ARPPRODUCTICON" Value="logo.ico" />
+
+		<MediaTemplate EmbedCab="yes" />
+		
+		<MajorUpgrade DowngradeErrorMessage="A later version of [ProductName] is already installed. Setup will now exit." />
+
+		<Directory Id="ProgramFiles64Folder">
+			<Directory Id="ROOTDIRECTORY" Name="$(var.Manufacturer)">
+				<Directory Id="INSTALLFOLDER" Name="$(Name)" />
+			</Directory>
+		</Directory>
+
+		<DirectoryRef Id="INSTALLFOLDER">
+
+			<Component Id="ServiceExecutable" Bitness="always64">
+
+				<File Id="BoruSoft.BraveBrowserSetDefaultProfile.Service.exe"
+                      Source="$(var.BoruSoft.BraveBrowserSetDefaultProfile.Service.TargetDir)publish\BoruSoft.BraveBrowserSetDefaultProfile.Service.exe"
+                      KeyPath="true" />
+
+				<File Id="AppSettings" 
+					  Name="appsettings.json" 
+					  Source="$(var.BoruSoft.BraveBrowserSetDefaultProfile.Service.TargetDir)publish\appsettings.json"/>
+				
+				<!-- Remove all files from the INSTALLFOLDER on uninstall -->
+				<RemoveFile Id="ALLFILES" Name="*.*" On="both" />
+
+				<ServiceInstall Id="ServiceInstaller"
+                                Type="ownProcess"
+                                Name="BoruSoft.BraveBrowserSetDefaultProfile.Service"
+                                DisplayName="$(Name)"
+                                Description="A Windows service that periodically updates the Windows registry to ensure that the Brave Browser will open links in a profile of your choosing."
+                                Start="auto"
+                                ErrorControl="normal" />
+
+				<ServiceControl Id="StartService"
+                                Start="install"
+                                Stop="both"
+                                Remove="uninstall"
+                                Name="BoruSoft.BraveBrowserSetDefaultProfile.Service"
+                                Wait="true" />
+			</Component>
+		</DirectoryRef>
+
+		<Feature Id="Service" Title="BoruSoft - BraveBrowserSetDefaultProfile Setup" Level="1">
+			<ComponentRef Id="ServiceExecutable" />
+		</Feature>
+
+	</Package>
+</Wix>
