@@ -9,15 +9,17 @@ The service updates the existing entry by adding ```-profile-directory="{{PROFIL
 - Download the latest installer from the releases section.
 - Double click the exe and follow the install steps.
 
+> **_NOTE:_** If you have installed version 1.0.0, it must be manually uninstalled first.
+
 # Configuration
-By default, the service will use "Profile 1" by default and it will check the registry entry every 60 seconds. You will want to change the profile name to your preferred Brave profile.
+By default, the service will use the "Default" profile and it will check the registry entry every 60 seconds. You will want to change the profile name to your preferred Brave profile.
 
 ## Edit the service settings
 
-- Navigate to ``` "C:\Program Files (x86)\BoruSoft\BoruSoft - Brave Browser Set Default Profile" ```
+- Navigate to ``` "C:\Program Files\BoruSoft\BoruSoft - Brave Browser Set Default Profile" ```
 - Open the ```appsettings.json``` file in a text editor.
 
-## Set the default brave profile
+### Set the default brave profile
 
 - Change the "ProfileName" property to your desired Brave profile name.
     - To find your Brave profile name:
@@ -26,10 +28,18 @@ By default, the service will use "Profile 1" by default and it will check the re
 - Save the changes to the file.
 - Restart the service.
 
-## Increase/decrease the registry check interval
+### Increase/decrease the registry check interval
 
 You may want to increase or decrease this depending on how much you need to garuntee that links will open in your choosen profile. Realistically this entry should only change after Brave does an update, which usually runs once a day. 
 
 - Change the "IntervalSeconds" property to your desired interval.
 - Save the changes to the file.
 - Restart the service.
+
+### Restart the Service
+
+For any changes to take effect, you need to restart the service.
+
+- Search for "Services" in the Windows search bar.
+- Find the ```"BoruSoft - Brave Browser Set Default Profile"``` service.
+- Right click and select "Restart".
